@@ -1,8 +1,12 @@
-@import "base/normalize";
-@import "base/fonts";
 @import "abstracts/constants";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+
+@import "base/fonts";
+@import "base/normalize";
 @import "base/wrapper";
 
-@import "components/header"
+@import "components/header";
+@import "components/welcome"
 
 

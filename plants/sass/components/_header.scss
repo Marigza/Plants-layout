@@ -1,3 +1,53 @@
 .header {
   background-color: $color-background;
 }
+
+.header__wrapper {
+    @include columns($width: 50%);
+}
+
+/*.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}*/
+
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin: 42px 0 42px 0;
+}
+
+.navigation__item {
+  padding-left: 46px;
+}
+
+.logo {
+  display: flex;
+  align-items:center;
+  /*padding-top: 42px;*/
+}
+
+.link {
+  @extend %font-first;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: none;
+  &:hover {
+      color: $color-brand-second;
+      @extend %transition;
+    }
+}
+
+.nav__link {
+color: $color-links;
+line-height: 5.0rem;
+  
+}
+.logo__icon {
+  padding-bottom: 7px;
+}
+.logo__link {
+color: $color-second-text;
+line-height: 2.1rem;
+}

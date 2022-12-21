@@ -1,3 +1,55 @@
+.welcome__button:hover, .link:hover {
+  transition: all 0.3s ease-out;
+}
+
+.link {
+  font-family: "Inika", Times, serif;
+}
+
+.welcome__content {
+  font-family: "Inter", Verdana, sans-serif;
+}
+
+/* inika-regular - latin */
+@font-face {
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inika-v21-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/inika-v21-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/inika-v21-latin-regular.woff2") format("woff2"), url("../fonts/inika-v21-latin-700.woff") format("woff"), url("../fonts/inika-v21-latin-regular.ttf") format("truetype"), url("../fonts/inika-v21-latin-regular.svg#Inika") format("svg");
+  /* Legacy iOS */
+}
+/* inika-700 - latin */
+@font-face {
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inika-v21-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/inika-v21-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/inika-v21-latin-700.woff2") format("woff2"), url("../fonts/inika-v21-latin-700.woff") format("woff"), url("../fonts/inika-v21-latin-700.ttf") format("truetype"), url("../fonts/inika-v21-latin-700.svg#Inika") format("svg");
+  /* Legacy iOS */
+}
+/* inter-regular - latin */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v12-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/inter-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-latin-regular.woff2") format("woff2"), url("../fonts/inter-v12-latin-regular.woff") format("woff"), url("../fonts/inter-v12-latin-regular.ttf") format("truetype"), url("../fonts/inter-v12-latin-regular.svg#Inter") format("svg");
+  /* Legacy iOS */
+}
+/* inter-700 - latin */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v12-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/inter-v12-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-latin-700.woff2") format("woff2"), url("../fonts/inter-v12-latin-700.woff") format("woff"), url("../fonts/inter-v12-latin-700.ttf") format("truetype"), url("../fonts/inter-v12-latin-700.svg#Inter") format("svg");
+  /* Legacy iOS */
+}
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -17,6 +69,7 @@
  */
 html {
   font-family: sans-serif;
+  font-size: 10px;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -282,6 +335,7 @@ html input[type=button],
 input[type=reset],
 input[type=submit] {
   -webkit-appearance: button;
+  appearance: button;
   /* 2 */
   cursor: pointer;
   /* 3 */
@@ -341,6 +395,7 @@ input[type=number]::-webkit-outer-spin-button {
  */
 input[type=search] {
   -webkit-appearance: textfield;
+  appearance: textfield;
   /* 1 */
   box-sizing: content-box;
   /* 2 */
@@ -417,46 +472,6 @@ ul {
   box-sizing: border-box;
 }
 
-/* inika-regular - latin */
-@font-face {
-  font-family: "Inika";
-  font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/inika-v21-latin-regular.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("./fonts/inika-v21-latin-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/inika-v21-latin-regular.woff2") format("woff2"), url("./fonts/inika-v21-latin-regular.woff") format("woff"), url("./fonts/inika-v21-latin-regular.ttf") format("truetype"), url("./fonts/inika-v21-latin-regular.svg#Inika") format("svg");
-  /* Legacy iOS */
-}
-/* inika-700 - latin */
-@font-face {
-  font-family: "Inika";
-  font-style: normal;
-  font-weight: 700;
-  src: url("./fonts/inika-v21-latin-700.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("./fonts/inika-v21-latin-700.eot?#iefix") format("embedded-opentype"), url("./fonts/inika-v21-latin-700.woff2") format("woff2"), url("./fonts/inika-v21-latin-700.woff") format("woff"), url("./fonts/inika-v21-latin-700.ttf") format("truetype"), url("./fonts/inika-v21-latin-700.svg#Inika") format("svg");
-  /* Legacy iOS */
-}
-/* inter-regular - latin */
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/inter-v12-latin-regular.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("./fonts/inter-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/inter-v12-latin-regular.woff2") format("woff2"), url("./fonts/inter-v12-latin-regular.woff") format("woff"), url("./fonts/inter-v12-latin-regular.ttf") format("truetype"), url("./fonts/inter-v12-latin-regular.svg#Inter") format("svg");
-  /* Legacy iOS */
-}
-/* inter-700 - latin */
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  src: url("./fonts/inter-v12-latin-700.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("./fonts/inter-v12-latin-700.eot?#iefix") format("embedded-opentype"), url("./fonts/inter-v12-latin-700.woff2") format("woff2"), url("./fonts/inter-v12-latin-700.woff") format("woff"), url("./fonts/inter-v12-latin-700.ttf") format("truetype"), url("./fonts/inter-v12-latin-700.svg#Inter") format("svg");
-  /* Legacy iOS */
-}
 .wrapper {
   width: 1220px;
   margin: 0 auto;
@@ -464,6 +479,110 @@ ul {
 
 .header {
   background-color: #EDF2EC;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.header__wrapper > * {
+  flex-basis: 50%;
+}
+
+/*.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}*/
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin: 42px 0 42px 0;
+}
+
+.navigation__item {
+  padding-left: 46px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  /*padding-top: 42px;*/
+}
+
+.link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.link:hover {
+  color: #E06733;
+}
+
+.nav__link {
+  color: #010201;
+  line-height: 5rem;
+}
+
+.logo__icon {
+  padding-bottom: 7px;
+}
+
+.logo__link {
+  color: #000000;
+  line-height: 2.1rem;
+}
+
+.welcome {
+  background-color: #EDF2EC;
+}
+
+.welcome__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.welcome__wrapper > * {
+  flex-basis: 50%;
+}
+
+.welcome__content {
+  font-weight: 400;
+}
+
+.welcome__image {
+  background: url(../assets/leafs_about.png) center no-repeat;
+  height: 407px;
+}
+
+.welcome__header {
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 5rem;
+  color: #717171;
+}
+.welcome__header span {
+  color: #499A18;
+}
+
+.welcome__text {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  color: #636060;
+}
+
+.welcome__button {
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #000000;
+  border: 2px solid #E06733;
+  border-radius: 10px;
+  padding: 14px 27px 14px 27px;
+}
+.welcome__button:hover {
+  background-color: #E06733;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
