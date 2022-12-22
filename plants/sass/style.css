@@ -2,12 +2,12 @@
   transition: all 0.3s ease-out;
 }
 
-.about__header, .link {
+.service__description, .about__header, .link {
   font-family: "Inika", Times, serif;
   font-weight: 400;
 }
 
-.about__text, .welcome__content {
+.gallery__caption, .about__text, .welcome__content {
   font-family: "Inter", Verdana, sans-serif;
   font-weight: 400;
 }
@@ -624,7 +624,7 @@ ul {
   line-height: 3rem;
   color: #636060;
   margin: 0;
-  padding: 38px 0 155px 0;
+  padding: 38px 0 152px 0;
 }
 
 .about__image-wrapper {
@@ -634,6 +634,97 @@ ul {
 .about__image {
   background: url(../assets/houseplant.jpg) right no-repeat;
   height: 479px;
+}
+
+.service {
+  background-color: #EDF2EC;
+}
+
+.service__description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 0 80px 0;
+}
+.service__description > * {
+  flex-basis: 33.3%;
+}
+
+.service__header {
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5.2rem;
+  color: #499A18;
+  margin: 0;
+}
+
+.service__tags {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 40px;
+}
+.service__tags > * {
+  flex-basis: 20.9%;
+}
+.service__tags > * {
+  margin-right: 38px;
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #E06733;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  padding: 11px;
+}
+
+.service__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.service__gallery > * {
+  flex-basis: 27%;
+}
+
+.gallery__item {
+  display: inline-block;
+  height: 450px;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 0 55px 0;
+}
+.gallery__item:nth-child(6) {
+  margin-bottom: 121px;
+}
+
+.gallery__caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery__header {
+  margin: 10px 0 14px 0;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #E06733;
+}
+
+.gallery__text {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #717171;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
