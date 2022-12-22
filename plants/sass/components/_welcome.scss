@@ -7,13 +7,18 @@
 }
 
 .welcome__content {
+  padding: 98px 0 0 60px;
   @extend %font-second;
   font-weight: 400;
 }
 
 .welcome__image {
-  background: url(../assets/leafs_about.png) center no-repeat;
+  background: url(../assets/leafs_about.png) left no-repeat;
   height: 407px;
+  margin: 62px 0;
+  border: 0;
+  padding: 0;
+  
 }
 
 .welcome__header {
@@ -30,6 +35,8 @@
   font-size: 2.0rem;
   line-height: 3.5rem;
   color: $color-main-text;
+  margin: 0;
+  padding: 43px 23px 48px 0 ; 
 }
 
 .welcome__button {
@@ -39,7 +46,7 @@
   color: $color-second-text;
   border: 2px solid $color-brand-second;
   border-radius: 10px;
-  padding: 14px 27px 14px 27px;
+  padding: 10px 26px;
   &:hover {
     background-color: $color-brand-second;
     color: $color-light;

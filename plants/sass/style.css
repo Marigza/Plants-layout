@@ -187,7 +187,7 @@ dfn {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
 }
 
 /**
@@ -547,12 +547,16 @@ ul {
 }
 
 .welcome__content {
+  padding: 98px 0 0 60px;
   font-weight: 400;
 }
 
 .welcome__image {
-  background: url(../assets/leafs_about.png) center no-repeat;
+  background: url(../assets/leafs_about.png) left no-repeat;
   height: 407px;
+  margin: 62px 0;
+  border: 0;
+  padding: 0;
 }
 
 .welcome__header {
@@ -569,6 +573,8 @@ ul {
   font-size: 2rem;
   line-height: 3.5rem;
   color: #636060;
+  margin: 0;
+  padding: 43px 23px 48px 0;
 }
 
 .welcome__button {
@@ -578,7 +584,7 @@ ul {
   color: #000000;
   border: 2px solid #E06733;
   border-radius: 10px;
-  padding: 14px 27px 14px 27px;
+  padding: 10px 26px;
 }
 .welcome__button:hover {
   background-color: #E06733;
