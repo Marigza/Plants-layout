@@ -1,0 +1,41 @@
+.about {
+  background-color: $color-light;
+}
+
+.about__wrapper {
+  @include columns($width: 50%);
+}
+
+.about__content {
+  padding-top: 163px;
+}
+
+.about__header {
+  @extend %font-first;
+  font-size: 4.0rem;
+  line-height: 5.2rem;
+  color: $color-brand-first;
+  margin: 0;
+  padding-right: 142px;
+  span {
+    color: $color-brand-second;
+  }
+}
+
+.about__text {
+  @extend %font-second;
+  font-size: 2.0rem;
+  line-height: 3.0rem;
+  color: $color-main-text;
+  margin: 0;
+  padding: 38px 0 155px 0;
+}
+
+.about__image-wrapper {
+  margin-top: 93px;
+}
+
+.about__image {
+  background: url(../assets/houseplant.jpg) right no-repeat;
+  height: 479px;
+}

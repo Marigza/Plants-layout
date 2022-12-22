@@ -31,7 +31,6 @@
 .link {
   @extend %font-first;
   font-size: 1.6rem;
-  font-weight: 400;
   text-decoration: none;
   &:hover {
       color: $color-brand-second;
