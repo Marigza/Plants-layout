@@ -1,0 +1,82 @@
+.prices {
+  background-color: $color-light;
+}
+
+.prices__wrapper {
+  @include columns($width: 40%);
+  @extend %font-second;
+  font-weight: 700;
+  color: $color-second-text;
+}
+
+.prices__header-first {
+  font-size: 4.0rem;
+  line-height: 4.8rem;
+  margin: 40px 0 60px 0;
+}
+
+.prices__variants {
+  width: 332px;
+  border: 1px solid $color-border;
+  border-radius: 20px;
+  padding: 34px 41px;
+
+}
+
+.variant {
+  @include columns($width: 15%);
+  font-size: 2.0rem;
+  line-height: 2.0rem;
+  padding: 15px 40px;
+  background-color: $color-background;
+  border-radius: 20px;
+  margin-bottom: 32px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  &:hover {
+    background-color: $color-accordeon;
+  }
+}
+
+.variant__text {
+  flex-grow: 1;
+}
+
+.variant__drop-btn {
+  background: url(../assets/svg/accordion_btn.svg) right no-repeat;
+  cursor: pointer;
+}
+
+.prices__contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.prices__header-second {
+  font-size: 4.0rem;
+  line-height: 5.0rem;
+  text-align: right;
+  margin: 40px 0 38px 0;
+  span{
+    color: $color-brand-first;
+  }
+}
+
+.prices__button {
+  @extend %font-first;
+  font-weight: 700;
+  font-size: 2.0rem;
+  line-height: 2.6rem;
+  text-align: center;
+  background-color: transparent;
+  color: $color-brand-second;
+  border: 1px solid $color-brand-second;
+  border-radius: 5px;
+  padding: 12px 32px;
+}
+
+.prices__image {
+  margin: 35px 0 114px 10px;
+}

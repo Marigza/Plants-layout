@@ -1,13 +1,13 @@
-.welcome__button:hover, .link:hover {
+.tag:hover, .welcome__button:hover, .link:hover {
   transition: all 0.3s ease-out;
 }
 
-.service__description, .about__header, .link {
+.prices__button, .service__description, .about__header, .link {
   font-family: "Inika", Times, serif;
   font-weight: 400;
 }
 
-.gallery__caption, .about__text, .welcome__content {
+.prices__wrapper, .gallery__caption, .about__text, .welcome__content {
   font-family: "Inter", Verdana, sans-serif;
   font-weight: 400;
 }
@@ -684,6 +684,10 @@ ul {
   border-radius: 5px;
   padding: 11px;
 }
+.tag:hover {
+  background-color: #E06733;
+  color: #ffffff;
+}
 
 .service__gallery {
   display: flex;
@@ -725,6 +729,100 @@ ul {
   line-height: 2rem;
   color: #717171;
   margin: 0;
+}
+
+.prices {
+  background-color: #ffffff;
+}
+
+.prices__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: 700;
+  color: #000000;
+}
+.prices__wrapper > * {
+  flex-basis: 40%;
+}
+
+.prices__header-first {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  margin: 40px 0 60px 0;
+}
+
+.prices__variants {
+  width: 332px;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+  padding: 34px 41px;
+}
+
+.variant {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding: 15px 40px;
+  background-color: #EDF2EC;
+  border-radius: 20px;
+  margin-bottom: 32px;
+}
+.variant > * {
+  flex-basis: 15%;
+}
+.variant:last-child {
+  margin-bottom: 0;
+}
+.variant:hover {
+  background-color: #D6E7D2;
+}
+
+.variant__text {
+  flex-grow: 1;
+}
+
+.variant__drop-btn {
+  background: url(../assets/svg/accordion_btn.svg) right no-repeat;
+  cursor: pointer;
+}
+
+.prices__contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.prices__header-second {
+  font-size: 4rem;
+  line-height: 5rem;
+  text-align: right;
+  margin: 40px 0 38px 0;
+}
+.prices__header-second span {
+  color: #499A18;
+}
+
+.prices__button {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  text-align: center;
+  background-color: transparent;
+  color: #E06733;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  padding: 12px 32px;
+}
+
+.prices__image {
+  margin: 35px 0 114px 10px;
+}
+
+.contacts {
+  background-color: #EDF2EC;
 }
 
 /*# sourceMappingURL=style.css.map */
