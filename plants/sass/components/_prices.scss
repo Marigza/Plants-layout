@@ -75,6 +75,10 @@
   border: 1px solid $color-brand-second;
   border-radius: 5px;
   padding: 12px 32px;
+  &:hover {
+    background-color: $color-brand-second;
+    color: $color-light;
+  }
 }
 
 .prices__image {

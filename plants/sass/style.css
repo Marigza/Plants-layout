@@ -7,7 +7,7 @@
   font-weight: 400;
 }
 
-.legend_text, .prices__wrapper, .gallery__caption, .about__text, .welcome__content {
+.footer__wrapper, .legend_text, .prices__wrapper, .gallery__caption, .about__text, .welcome__content {
   font-family: "Inter", Verdana, sans-serif;
   font-weight: 400;
 }
@@ -816,6 +816,10 @@ ul {
   border-radius: 5px;
   padding: 12px 32px;
 }
+.prices__button:hover {
+  background-color: #E06733;
+  color: #ffffff;
+}
 
 .prices__image {
   margin: 35px 0 114px 10px;
@@ -854,6 +858,9 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
+.location__selection:hover {
+  background-color: #C1E698;
+}
 
 .legend_text {
   font-size: 2rem;
@@ -866,6 +873,46 @@ ul {
   background: url(../assets/svg/accordion_btn_light.svg) center no-repeat;
   width: 16px;
   height: 16px;
+}
+
+.footer {
+  background-color: #ffffff;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 2rem;
+  line-height: 5rem;
+  color: #000000;
+  padding: 39px 0;
+}
+.footer__wrapper > * {
+  flex-basis: 20%;
+}
+
+.footer__element {
+  display: flex;
+  margin: 0;
+}
+.footer__element > * {
+  padding-right: 20px;
+}
+.footer__element > *:last-child {
+  padding-right: 0;
+}
+.footer__element:nth-child(2) {
+  justify-content: center;
+}
+.footer__element:last-child {
+  justify-content: flex-end;
+  line-height: 1rem;
+  padding-top: 7px;
+}
+
+.social-link:hover {
+  background-color: #C1E698;
 }
 
 /*# sourceMappingURL=style.css.map */
