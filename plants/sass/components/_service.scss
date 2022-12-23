@@ -36,6 +36,11 @@
   border: 1px solid $color-brand-second;
   border-radius: 5px;
   padding: 11px;
+  &:hover {
+    background-color: $color-brand-second;
+    color: $color-light;
+    @extend %transition;
+  }
 }
 
 .service__gallery {
