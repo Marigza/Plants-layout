@@ -6,12 +6,6 @@
     @include columns($width: 50%);
 }
 
-/*.header__wrapper {
-  display: flex;
-  justify-content: space-between;
-}*/
-
-
 .navigation {
   display: flex;
   justify-content: flex-end;
@@ -39,14 +33,19 @@
 }
 
 .nav__link {
-color: $color-links;
-line-height: 5.0rem;
-  
+  color: $color-links;
+  line-height: 5.0rem;
 }
+
+.nav__link_active {
+  color: $color-brand-second;
+}
+
 .logo__icon {
   padding-bottom: 7px;
 }
+
 .logo__link {
-color: $color-second-text;
-line-height: 2.1rem;
+  color: $color-second-text;
+  line-height: 2.1rem;
 }

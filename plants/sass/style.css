@@ -492,10 +492,6 @@ ul {
   flex-basis: 50%;
 }
 
-/*.header__wrapper {
-  display: flex;
-  justify-content: space-between;
-}*/
 .navigation {
   display: flex;
   justify-content: flex-end;
@@ -523,6 +519,10 @@ ul {
 .nav__link {
   color: #010201;
   line-height: 5rem;
+}
+
+.nav__link_active {
+  color: #E06733;
 }
 
 .logo__icon {
