@@ -1,4 +1,4 @@
-.location__selection:active, .prices__button:hover, .variant:hover, .tag:hover, .welcome__button:hover, .link:hover {
+.link_pinterest:hover, .link_twitter:hover, .link_facebook:hover, .link_instagram:hover, .location__selection:active, .prices__button:hover, .variant:hover, .tag:hover, .welcome__button:hover, .link:hover {
   transition: all 0.5s ease-out;
 }
 
@@ -916,8 +916,44 @@ html {
   padding-top: 7px;
 }
 
-.social-link:hover {
-  background-color: #C1E698;
+.social-link {
+  box-sizing: content-box;
+  width: 32px;
+  height: 32px;
+}
+
+.link_instagram {
+  background: url(../assets/svg/instagram.svg) left no-repeat;
+}
+.link_instagram:hover {
+  background: url(../assets/svg/instagram_hovered.svg) left no-repeat;
+}
+
+.link_facebook {
+  background: url(../assets/svg/fb.svg) left no-repeat;
+}
+.link_facebook:hover {
+  background: url(../assets/svg/fb_hovered.svg) left no-repeat;
+}
+
+.link_twitter {
+  background: url(../assets/svg/tw.svg) left no-repeat;
+}
+.link_twitter:hover {
+  background: url(../assets/svg/tw_hovered.svg) left no-repeat;
+}
+
+.link_pinterest {
+  background: url(../assets/svg/pinterest.svg) left no-repeat;
+}
+.link_pinterest:hover {
+  background: url(../assets/svg/pinterest_hovered.svg) left no-repeat;
+}
+
+.footer__link {
+  display: block;
+  width: 32px;
+  height: 32px;
 }
 
 /*# sourceMappingURL=style.css.map */

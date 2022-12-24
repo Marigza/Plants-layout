@@ -30,6 +30,46 @@
   }
 }
 
-.social-link:hover {
- background-color: $color-bg-active;
+.social-link {
+  box-sizing: content-box;
+  width: 32px;
+  height: 32px;
+}
+
+.link_instagram {
+  background: url(../assets/svg/instagram.svg) left no-repeat;
+  &:hover {
+    background: url(../assets/svg/instagram_hovered.svg) left no-repeat;
+    @extend %transition;
+  }
+}
+
+.link_facebook {
+  background: url(../assets/svg/fb.svg) left no-repeat;
+  &:hover {
+    background: url(../assets/svg/fb_hovered.svg) left no-repeat;
+    @extend %transition;
+  }
+}
+
+.link_twitter {
+  background: url(../assets/svg/tw.svg) left no-repeat;
+  &:hover {
+    background: url(../assets/svg/tw_hovered.svg) left no-repeat;
+    @extend %transition;
+  }
+}
+
+.link_pinterest {
+  background: url(../assets/svg/pinterest.svg) left no-repeat;
+  &:hover {
+    background: url(../assets/svg/pinterest_hovered.svg) left no-repeat;
+    @extend %transition;
+  }
+}
+
+.footer__link {
+  display: block;
+  width: 32px;
+  height: 32px;
 }
