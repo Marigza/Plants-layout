@@ -1,0 +1,54 @@
+.welcome {
+  background-color: $color-background;
+}
+
+.welcome__wrapper {
+  @include columns($width: 50%);
+}
+
+.welcome__content {
+  padding: 98px 0 0 60px;
+  @extend %font-second;
+}
+
+.welcome__image {
+  background: url(../assets/leafs_about.png) left no-repeat;
+  height: 407px;
+  margin: 62px 0;
+  border: 0;
+  padding: 0;
+  
+}
+
+.welcome__header {
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 5.0rem;
+  color: $color-text-caption;
+  span {
+    color: $color-brand-first;
+  }
+}
+
+.welcome__text {
+  font-size: 2.0rem;
+  line-height: 3.5rem;
+  color: $color-main-text;
+  margin: 0;
+  padding: 43px 23px 48px 0 ; 
+}
+
+.welcome__button {
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 2.0rem;
+  color: $color-second-text;
+  border: 2px solid $color-brand-second;
+  border-radius: 10px;
+  padding: 10px 26px;
+  &:hover {
+    background-color: $color-brand-second;
+    color: $color-light;
+    @extend %transition;
+  }
+}

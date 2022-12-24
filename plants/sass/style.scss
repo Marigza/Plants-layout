@@ -1,0 +1,15 @@
+@import "abstracts/constants";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+
+@import "base/fonts";
+@import "base/normalize";
+@import "base/wrapper";
+
+@import "components/header";
+@import "components/welcome";
+@import "components/about";
+@import "components/service";
+@import "components/prices";
+@import "components/contacts";
+@import "components/footer";

@@ -1,0 +1,75 @@
+.footer {
+  background-color: $color-light;
+}
+
+.footer__wrapper {
+  @include columns($width: 20%);
+  @extend %font-second;
+  font-size: 2.0rem;
+  line-height: 5.0rem;
+  color: $color-second-text;
+  padding: 39px 0;
+}
+
+.footer__element {
+  display: flex;
+  margin: 0;
+  >*{
+    padding-right: 20px;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  &:nth-child(2) {
+    justify-content: center;
+  }
+  &:last-child {
+    justify-content: flex-end;
+    line-height: 1.0rem;
+    padding-top: 7px;
+  }
+}
+
+.social-link {
+  box-sizing: content-box;
+  width: 32px;
+  height: 32px;
+}
+
+.link_instagram {
+  background: url(../assets/svg/instagram.svg) left no-repeat;
+  &:hover {
+    background: url(../assets/svg/instagram_hovered.svg) left no-repeat;
+    @extend %transition;
+  }
+}
+
+.link_facebook {
+  background: url(../assets/svg/fb.svg) left no-repeat;
+  &:hover {
+    background: url(../assets/svg/fb_hovered.svg) left no-repeat;
+    @extend %transition;
+  }
+}
+
+.link_twitter {
+  background: url(../assets/svg/tw.svg) left no-repeat;
+  &:hover {
+    background: url(../assets/svg/tw_hovered.svg) left no-repeat;
+    @extend %transition;
+  }
+}
+
+.link_pinterest {
+  background: url(../assets/svg/pinterest.svg) left no-repeat;
+  &:hover {
+    background: url(../assets/svg/pinterest_hovered.svg) left no-repeat;
+    @extend %transition;
+  }
+}
+
+.footer__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+}

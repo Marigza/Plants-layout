@@ -1,0 +1,53 @@
+.contacts {
+  background-color: $color-background;
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 53px;
+}
+
+.contacts__header {
+  @extend %font-first;
+  font-weight: 700;
+  font-size: 4.0rem;
+  line-height: 5.2rem;
+  color: $color-brand-first;
+  margin: 0;
+  padding: 7px 0 0 44px;
+}
+
+.contacts__locations {
+  padding-top: 95px;
+  width: 450px;
+}
+
+.location__selection {
+  padding: 5px 33px 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-accordeon;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  &:active {
+    background-color: $color-bg-active;
+    box-shadow: none;
+    @extend %transition;
+  }
+}
+
+.legend_text {
+  @extend %font-second;
+  font-size: 2.0rem;
+  line-height: 4.0rem;
+  letter-spacing: 0.05em;
+  color: $color-text-caption;
+}
+
+.legend__drop-btn {
+  background: url(../assets/svg/accordion_btn_light.svg) center no-repeat;
+  width: 16px;
+  height: 16px;
+}
