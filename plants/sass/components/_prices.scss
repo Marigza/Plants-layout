@@ -36,6 +36,7 @@
   }
   &:hover {
     background-color: $color-accordeon;
+    @extend %transition;
   }
 }
 
@@ -78,6 +79,7 @@
   &:hover {
     background-color: $color-brand-second;
     color: $color-light;
+    @extend %transition;
   }
 }
 

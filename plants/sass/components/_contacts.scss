@@ -28,11 +28,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: $color-accordeon;
+  background-color: $color-accordeon;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
-  &:hover {
+  &:active {
     background-color: $color-bg-active;
+    box-shadow: none;
+    @extend %transition;
   }
 }
 
