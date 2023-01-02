@@ -600,9 +600,30 @@ html {
 .welcome__wrapper > * {
   flex-basis: 50%;
 }
+@media (max-width: 1235px) {
+  .welcome__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .welcome__wrapper > * {
+    flex-basis: 47%;
+  }
+}
 
 .welcome__content {
   padding: 98px 0 0 60px;
+}
+@media (max-width: 1235px) {
+  .welcome__content {
+    flex-grow: 1;
+    padding: 40px 0 0 0;
+  }
+}
+@media (max-width: 670px) {
+  .welcome__content {
+    padding: 20px 0 24px 0;
+  }
 }
 
 .welcome__image {
@@ -611,6 +632,19 @@ html {
   margin: 62px 0;
   border: 0;
   padding: 0;
+}
+@media (max-width: 1235px) {
+  .welcome__image {
+    background: url(../assets/leafs_about_tablet.png) right top no-repeat;
+    order: 1;
+    margin: 30px 0 0 0;
+    height: 390px;
+  }
+}
+@media (max-width: 670px) {
+  .welcome__image {
+    display: none;
+  }
 }
 
 .welcome__header {
@@ -622,6 +656,17 @@ html {
 .welcome__header span {
   color: #499A18;
 }
+@media (max-width: 1235px) {
+  .welcome__header {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 670px) {
+  .welcome__header {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
 
 .welcome__text {
   font-size: 2rem;
@@ -629,6 +674,18 @@ html {
   color: #636060;
   margin: 0;
   padding: 43px 23px 48px 0;
+}
+@media (max-width: 1235px) {
+  .welcome__text {
+    padding: 29px 23px 34px 6px;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+}
+@media (max-width: 1235px) {
+  .welcome__text {
+    padding: 20px 0 26px 0;
+  }
 }
 
 .welcome__button {
@@ -643,6 +700,12 @@ html {
 .welcome__button:hover {
   background-color: #E06733;
   color: #ffffff;
+}
+@media (max-width: 670px) {
+  .welcome__button {
+    font-size: 1rem;
+    padding: 5px 16px;
+  }
 }
 
 .about {
