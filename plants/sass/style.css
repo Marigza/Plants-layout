@@ -1,4 +1,4 @@
-.link_pinterest:hover, .link_twitter:hover, .link_facebook:hover, .link_instagram:hover, .location__selection:active, .prices__button:hover, .variant:hover, .tag:hover, .welcome__button:hover, .link:hover {
+.link_pinterest:hover, .link_twitter:hover, .link_facebook:hover, .link_instagram:hover, .location__selection:active, .prices__button:hover, .variant:hover, .tag:hover, .welcome__button:hover, .burger__icon:hover, .link:hover {
   transition: all 0.5s ease-out;
 }
 
@@ -501,25 +501,45 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 42px;
+  padding-bottom: 42px;
 }
 .header__wrapper > * {
   flex-basis: 50%;
+}
+@media (max-width: 1235px) {
+  .header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .header__wrapper > * {
+    flex-basis: 15%;
+  }
+}
+
+@media (max-width: 670px) {
+  .header__nav {
+    display: none;
+  }
 }
 
 .navigation {
   display: flex;
   justify-content: flex-end;
-  margin: 42px 0 42px 0;
+  margin: 0;
 }
 
 .navigation__item {
   padding-left: 46px;
+  white-space: nowrap;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  /*padding-top: 42px;*/
 }
 
 .link {
@@ -546,6 +566,26 @@ html {
 .logo__link {
   color: #000000;
   line-height: 2.1rem;
+}
+
+.burger {
+  display: none;
+}
+@media (max-width: 670px) {
+  .burger {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.burger__icon {
+  box-sizing: content-box;
+  width: 40px;
+  height: 26px;
+  background: url(../assets/svg/burger.svg) left no-repeat;
+}
+.burger__icon:hover {
+  background: url(../assets/svg/burger_hovered.svg) left no-repeat;
 }
 
 .welcome {

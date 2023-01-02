@@ -4,22 +4,36 @@
 
 .header__wrapper {
     @include columns($width: 50%);
+    padding-top: 42px;
+    padding-bottom: 42px;
+    @include media-tablet {
+      @include columns($width: 15%);
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+}
+
+.header__nav {
+  @include media-mobile {
+    display: none;
+  }
 }
 
 .navigation {
   display: flex;
   justify-content: flex-end;
-  margin: 42px 0 42px 0;
+  margin: 0;
 }
 
 .navigation__item {
   padding-left: 46px;
+  white-space: nowrap;
 }
 
 .logo {
   display: flex;
   align-items:center;
-  /*padding-top: 42px;*/
+  
 }
 
 .link {
