@@ -479,8 +479,18 @@ html {
 }
 
 .wrapper {
-  width: 1220px;
+  max-width: 1220px;
   margin: 0 auto;
+}
+@media (max-width: 1235px) {
+  .wrapper {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 670px) {
+  .wrapper {
+    padding: 0 25px;
+  }
 }
 
 .header {
@@ -891,7 +901,8 @@ html {
   font-size: 2rem;
   line-height: 5rem;
   color: #000000;
-  padding: 39px 0;
+  padding-top: 39px;
+  padding-bottom: 39px;
 }
 .footer__wrapper > * {
   flex-basis: 20%;
