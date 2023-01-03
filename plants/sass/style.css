@@ -682,7 +682,7 @@ html {
     line-height: 2.5rem;
   }
 }
-@media (max-width: 1235px) {
+@media (max-width: 670px) {
   .welcome__text {
     padding: 20px 0 26px 0;
   }
@@ -720,9 +720,29 @@ html {
 .about__wrapper > * {
   flex-basis: 50%;
 }
+@media (max-width: 1235px) {
+  .about__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .about__wrapper > * {
+    flex-basis: 100%;
+  }
+}
 
 .about__content {
   padding-top: 163px;
+}
+@media (max-width: 1235px) {
+  .about__content {
+    padding-top: 37px;
+  }
+}
+@media (max-width: 670px) {
+  .about__content {
+    padding-top: 30px;
+  }
 }
 
 .about__header {
@@ -735,6 +755,23 @@ html {
 .about__header span {
   color: #E06733;
 }
+@media (max-width: 1235px) {
+  .about__header {
+    padding-right: 123px;
+    padding-left: 123px;
+    text-align: center;
+    font-size: 3.5rem;
+    line-height: 4.6rem;
+  }
+}
+@media (max-width: 670px) {
+  .about__header {
+    padding-right: 23px;
+    padding-left: 23px;
+    font-size: 2.5rem;
+    line-height: 3.3rem;
+  }
+}
 
 .about__text {
   font-size: 2rem;
@@ -743,14 +780,49 @@ html {
   margin: 0;
   padding: 38px 0 152px 0;
 }
+@media (max-width: 1235px) {
+  .about__text {
+    padding: 50px 0 67px 0;
+  }
+}
+@media (max-width: 670px) {
+  .about__text {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding: 13px 0 5px 0;
+  }
+}
 
 .about__image-wrapper {
   margin-top: 93px;
+}
+@media (max-width: 1235px) {
+  .about__image-wrapper {
+    margin-top: 0;
+    padding-bottom: 96px;
+  }
+}
+@media (max-width: 670px) {
+  .about__image-wrapper {
+    padding-bottom: 31px;
+  }
 }
 
 .about__image {
   background: url(../assets/houseplant.jpg) right no-repeat;
   height: 479px;
+}
+@media (max-width: 1235px) {
+  .about__image {
+    background: url(../assets/houseplant_tablet.jpg) center no-repeat;
+    height: 258px;
+  }
+}
+@media (max-width: 670px) {
+  .about__image {
+    background: url(../assets/houseplant_mobile.jpg) center no-repeat;
+    height: 147px;
+  }
 }
 
 .service {
