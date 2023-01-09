@@ -1344,6 +1344,18 @@ html {
 .footer__wrapper > * {
   flex-basis: 20%;
 }
+@media (max-width: 1235px) {
+  .footer__wrapper {
+    flex-direction: column;
+    padding-top: 17px;
+    padding-bottom: 18px;
+  }
+}
+@media (max-width: 670px) {
+  .footer__wrapper {
+    padding-top: 5px;
+  }
+}
 
 .footer__element {
   display: flex;
@@ -1362,6 +1374,23 @@ html {
   justify-content: flex-end;
   line-height: 1rem;
   padding-top: 7px;
+}
+@media (max-width: 1235px) {
+  .footer__element {
+    justify-content: center;
+  }
+  .footer__element:nth-child(2) {
+    line-height: 2.8rem;
+  }
+  .footer__element:last-child {
+    justify-content: center;
+    padding-top: 24px;
+  }
+}
+@media (max-width: 670px) {
+  .footer__element:last-child {
+    padding-top: 12px;
+  }
 }
 
 .social-link {

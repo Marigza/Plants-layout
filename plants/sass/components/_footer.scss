@@ -10,6 +10,14 @@
   color: $color-second-text;
   padding-top: 39px;
   padding-bottom: 39px;
+  @include media-tablet {
+    flex-direction: column;
+    padding-top: 17px;
+    padding-bottom: 18px;
+  }
+  @include media-mobile {
+    padding-top: 5px;
+  }
 }
 
 .footer__element {
@@ -28,6 +36,21 @@
     justify-content: flex-end;
     line-height: 1.0rem;
     padding-top: 7px;
+  }
+  @include media-tablet {
+    justify-content: center;
+    &:nth-child(2) {
+      line-height: 2.8rem;
+    }
+    &:last-child {
+      justify-content: center;
+      padding-top: 24px;
+    }
+  }
+  @include media-mobile {
+    &:last-child {
+      padding-top: 12px;
+    }
   }
 }
 
