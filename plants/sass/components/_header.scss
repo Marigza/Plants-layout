@@ -15,19 +15,58 @@
 
 .header__nav {
   @include media-mobile {
-    display: none;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background-color: $color-brand-second;
+    border-radius: 0 0 30px 30px;
+  }
+  transition: top ease 0.5s;
+}
+
+.header__nav_active {
+  @include media-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
   }
 }
+
+.close-nav {
+  display: none;
+  @include media-mobile {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.close-icon {
+  width: 20px;
+  height: 20px;
+  margin: 20px;
+  background: url(../assets/svg/close_icon.svg) no-repeat center;
+}
+
 
 .navigation {
   display: flex;
   justify-content: flex-end;
   margin: 0;
+  @include media-mobile {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
 }
 
 .navigation__item {
   padding-left: 46px;
   white-space: nowrap;
+  @include media-mobile {
+    padding-left: 0;
+  }
 }
 
 .logo {
@@ -44,6 +83,9 @@
       color: $color-brand-second;
       @extend %transition;
     }
+  @include media-mobile {
+    font-size: 2.0rem;
+  }  
 }
 
 .nav__link {

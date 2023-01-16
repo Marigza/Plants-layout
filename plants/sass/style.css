@@ -12,6 +12,28 @@
   font-weight: 400;
 }
 
+.modal-window {
+  display: none;
+}
+@media (max-width: 670px) {
+  .modal-window {
+    display: block;
+    position: fixed;
+    bottom: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 670px) {
+  .modal-window_active {
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
 /* inika-regular - latin */
 @font-face {
   font-family: "Inika";
@@ -520,10 +542,44 @@ html {
   }
 }
 
+.header__nav {
+  transition: top ease 0.5s;
+}
 @media (max-width: 670px) {
   .header__nav {
-    display: none;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background-color: #E06733;
+    border-radius: 0 0 30px 30px;
   }
+}
+
+@media (max-width: 670px) {
+  .header__nav_active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+}
+
+.close-nav {
+  display: none;
+}
+@media (max-width: 670px) {
+  .close-nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.close-icon {
+  width: 20px;
+  height: 20px;
+  margin: 20px;
+  background: url(../assets/svg/close_icon.svg) no-repeat center;
 }
 
 .navigation {
@@ -531,10 +587,22 @@ html {
   justify-content: flex-end;
   margin: 0;
 }
+@media (max-width: 670px) {
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+}
 
 .navigation__item {
   padding-left: 46px;
   white-space: nowrap;
+}
+@media (max-width: 670px) {
+  .navigation__item {
+    padding-left: 0;
+  }
 }
 
 .logo {
@@ -548,6 +616,11 @@ html {
 }
 .link:hover {
   color: #E06733;
+}
+@media (max-width: 670px) {
+  .link {
+    font-size: 2rem;
+  }
 }
 
 .nav__link {

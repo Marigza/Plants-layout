@@ -9,7 +9,7 @@
   <link rel="icon" href="assets/logo.ico">
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="welcome">
     <div class="wrapper header__wrapper">
       <div class="logo">
         <div class="logo__icon">
@@ -20,8 +20,11 @@
         <div class="logo_name"><a class="link logo__link" href="index.html">Plants</a></div>
       </div>
       <nav class="header__nav">
+        <div class="close-nav">
+          <div class="close-icon"></div>
+        </div>
         <ul class="navigation">
-          <li class="navigation__item"><a class="link nav__link nav__link_active" href="index.html">Home</a></li>
+          <li class="navigation__item"><a class="link nav__link" href="#welcome">Home</a></li>
           <li class="navigation__item"><a class="link nav__link" href="#about">About us</a></li>
           <li class="navigation__item"><a class="link nav__link" href="#service">Service</a></li>
           <li class="navigation__item"><a class="link nav__link" href="#prices">Price</a></li>
@@ -190,6 +193,7 @@
       </ul>
     </div>
   </footer>
+  <div class="modal-window"></div>
   <script src="script.js"></script>
 </body>
 </html>
