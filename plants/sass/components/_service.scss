@@ -6,6 +6,13 @@
   @include columns($width: 33.3%);
   @extend %font-first;
   padding: 40px 0 80px 0;
+  @include media-tablet {
+    @include columns($width: 100%);
+    padding: 60px 0 40px 0;
+  }
+  @include media-mobile {
+    padding: 30px 0 30px 0;
+  }
 }
 
 .service__header {
@@ -14,6 +21,18 @@
   line-height: 5.2rem;
   color: $color-brand-first;
   margin: 0;
+  @include media-tablet {
+    padding-right: 362px;
+    padding-bottom: 42px;
+    font-size: 3.5rem;
+    line-height: 4.6rem;
+  }
+  @include media-mobile {
+    padding-right: 140px;
+    padding-bottom: 36px;
+    font-size: 2.5rem;
+    line-height: 3.3rem;
+  }
 }
 
 .service__tags {
@@ -25,6 +44,22 @@
   >* {
     margin-right: 38px;
   }
+  @include media-tablet {
+    @include columns($width: 24%);
+    justify-content: flex-start;
+    padding-left: 0;
+    >* {
+      margin-right: 38px;
+    }
+  }
+  @include media-mobile {
+    @include columns($width: 36.7%);
+    justify-content: flex-start;
+    >* {
+      margin-right: 10px;
+      margin-bottom: 9px;
+    }
+  }
 }
 
 .tag {
@@ -33,6 +68,7 @@
   font-size: 2.0rem;
   line-height: 2.6rem;
   color: $color-brand-second;
+  background-color: transparent;
   border: 1px solid $color-brand-second;
   border-radius: 5px;
   padding: 11px;
@@ -41,10 +77,22 @@
     color: $color-light;
     @extend %transition;
   }
+  @include media-mobile {
+    padding: 7px;
+    font-size: 1.5rem;
+    line-height: 2.0rem;
+  }
 }
 
 .service__gallery {
   @include columns($width: 27%);
+  @include media-tablet {
+    @include columns($width: 42%);
+  }
+  @include media-mobile {
+    @include columns($width: 100%);
+    padding: 0 25px;
+  }
 }
 
 .gallery__item {
@@ -57,6 +105,18 @@
   &:nth-child(6) {
     margin-bottom: 121px;
   }
+  @include media-tablet {
+  margin: 0 0 38px 0;
+    &:nth-child(6) {
+      margin-bottom: 70px;
+    }
+  }
+  @include media-mobile {
+    margin: 0 0 34px 0;
+    &:nth-child(6) {
+      margin-bottom: 28px;
+    }
+  }
 }
 
 .gallery__caption {
@@ -64,7 +124,6 @@
   flex-direction: column;
   align-items: center;
   @extend %font-second;
-
 }
 
 .gallery__header {
@@ -73,6 +132,9 @@
   font-size: 2.0rem;
   line-height: 2.0rem;
   color: $color-brand-second;
+  @include media-tablet {
+    margin: 6px 0 12px 0;
+  }
 }
 
 .gallery__text {
@@ -80,4 +142,8 @@
   line-height: 2.0rem;
   color: $color-text-caption;
   margin: 0;
+  @include media-tablet {
+    padding: 0 38px;
+    text-align: center;
+  }
 }

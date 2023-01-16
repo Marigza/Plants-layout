@@ -1,12 +1,14 @@
 @import "abstracts/constants";
 @import "abstracts/mixins";
 @import "abstracts/placeholders";
+@import "base/modal";
 
 @import "base/fonts";
 @import "base/normalize";
 @import "base/wrapper";
 
 @import "components/header";
+@import "components/burger";
 @import "components/welcome";
 @import "components/about";
 @import "components/service";
