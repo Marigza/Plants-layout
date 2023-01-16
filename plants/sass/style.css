@@ -617,15 +617,15 @@ html {
 .link:hover {
   color: #E06733;
 }
-@media (max-width: 670px) {
-  .link {
-    font-size: 2rem;
-  }
-}
 
 .nav__link {
   color: #010201;
   line-height: 5rem;
+}
+@media (max-width: 670px) {
+  .nav__link {
+    font-size: 2rem;
+  }
 }
 
 .nav__link_active {

@@ -83,14 +83,14 @@
       color: $color-brand-second;
       @extend %transition;
     }
-  @include media-mobile {
-    font-size: 2.0rem;
-  }  
 }
 
 .nav__link {
   color: $color-links;
   line-height: 5.0rem;
+  @include media-mobile {
+    font-size: 2.0rem;
+  }
 }
 
 .nav__link_active {
