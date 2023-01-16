@@ -9,7 +9,7 @@
   <link rel="icon" href="assets/logo.ico">
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="welcome">
     <div class="wrapper header__wrapper">
       <div class="logo">
         <div class="logo__icon">
@@ -20,14 +20,20 @@
         <div class="logo_name"><a class="link logo__link" href="index.html">Plants</a></div>
       </div>
       <nav class="header__nav">
+        <div class="close-nav">
+          <div class="close-icon"></div>
+        </div>
         <ul class="navigation">
-          <li class="navigation__item"><a class="link nav__link nav__link_active" href="index.html">Home</a></li>
+          <li class="navigation__item"><a class="link nav__link" href="#welcome">Home</a></li>
           <li class="navigation__item"><a class="link nav__link" href="#about">About us</a></li>
           <li class="navigation__item"><a class="link nav__link" href="#service">Service</a></li>
           <li class="navigation__item"><a class="link nav__link" href="#prices">Price</a></li>
           <li class="navigation__item"><a class="link nav__link" href="#contacts">Contacts</a></li>
         </ul>
       </nav>
+      <div class="burger">
+        <div class="burger__icon"></div>
+      </div>
     </div>
   </header>
   <main class="main">
@@ -67,42 +73,60 @@
         </div>
         <div class="service__gallery">
           <figure class="gallery__item">
-            <img class="gallery__photo" src="./assets/gallery/gallery_garden_woman.jpg" alt="service">
+            <picture class="gallery__photo">
+              <source media="(max-width: 1235px)" srcset="./assets/gallery/gallery_garden_woman_mobile.jpg">
+              <img src="./assets/gallery/gallery_garden_woman.jpg" alt="service">
+            </picture>
             <figcaption class="gallery__caption">
               <h4 class="gallery__header">Garden care</h4>
               <p class="gallery__text">Lorem Ipsum has been the industry</p>
             </figcaption>
           </figure>
           <figure class="gallery__item">
-            <img class="gallery__photo" src="./assets/gallery/gallery_planting_lemon.jpg" alt="service">
+            <picture class="gallery__photo">
+              <source media="(max-width: 1235px)" srcset="./assets/gallery/gallery_planting_lemon_mobile.jpg">
+              <img src="./assets/gallery/gallery_planting_lemon.jpg" alt="service">
+            </picture>
             <figcaption class="gallery__caption">
               <h4 class="gallery__header">Planting</h4>
               <p class="gallery__text">Lorem Ipsum has been the industry</p>
             </figcaption>
           </figure>
           <figure class="gallery__item">
-            <img class="gallery__photo" src="./assets/gallery/gallery_lawn_water.jpg" alt="service">
+            <picture class="gallery__photo">
+              <source media="(max-width: 1235px)" srcset="./assets/gallery/gallery_lawn_water_mobile.jpg">
+              <img src="./assets/gallery/gallery_lawn_water.jpg" alt="service">
+            </picture>
             <figcaption class="gallery__caption">
               <h4 class="gallery__header">Lawn care</h4>
               <p class="gallery__text">Lorem Ipsum has been the industry</p>
             </figcaption>
           </figure>
           <figure class="gallery__item">
-            <img class="gallery__photo" src="./assets/gallery/gallery_planting_flower.jpg" alt="service">
+            <picture class="gallery__photo">
+              <source media="(max-width: 1235px)" srcset="./assets/gallery/gallery_planting_flower_mobile.jpg">
+              <img  src="./assets/gallery/gallery_planting_flower.jpg" alt="service">
+            </picture>
             <figcaption class="gallery__caption">
               <h4 class="gallery__header">Planting</h4>
               <p class="gallery__text">Lorem Ipsum has been the industry</p>
             </figcaption>
           </figure>
           <figure class="gallery__item">
-            <img class="gallery__photo" src="./assets/gallery/gallery_garden_sukkulents.jpg" alt="service">
+            <picture class="gallery__photo">
+              <source media="(max-width: 1235px)" srcset="./assets/gallery/gallery_garden_sukkulents_mobile.jpg">
+              <img src="./assets/gallery/gallery_garden_sukkulents.jpg" alt="service">
+            </picture>
             <figcaption class="gallery__caption">
               <h4 class="gallery__header">Garden care</h4>
               <p class="gallery__text">Lorem Ipsum has been the industry</p>
             </figcaption>
           </figure>
           <figure class="gallery__item">
-            <img class="gallery__photo" src="./assets/gallery/gallery_planting_cactus.jpg" alt="service">
+            <picture class="gallery__photo">
+              <source media="(max-width: 1235px)" srcset="./assets/gallery/gallery_planting_cactus_mobile.jpg">
+              <img src="./assets/gallery/gallery_planting_cactus.jpg" alt="service">
+            </picture>
             <figcaption class="gallery__caption">
               <h4 class="gallery__header">Planting</h4>
               <p class="gallery__text">Lorem Ipsum has been the industry</p>
@@ -139,7 +163,9 @@
     </section>
     <section class="contacts" id="contacts">
       <div class="wrapper contacts__wrapper">
-        <div class="contacts__image"><img src="./assets/contact_woman.png" alt="contacts"></div>
+        <div class="contacts__image">
+          <img class="image-woman" src="./assets/contact_woman.png" alt="contacts">
+        </div>
         <h2 class="contacts__header">Contact us</h2>
         <div class="contacts__locations">
           <div class="location__selection">
@@ -167,6 +193,7 @@
       </ul>
     </div>
   </footer>
+  <div class="modal-window"></div>
   <script src="script.js"></script>
 </body>
 </html>

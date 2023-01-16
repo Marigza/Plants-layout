@@ -1,0 +1,19 @@
+.modal-window {
+  display: none;
+  @include media-mobile {
+    display: block;
+    position: fixed;
+    bottom: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+  }
+}
+
+.modal-window_active {
+  @include media-mobile {
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}

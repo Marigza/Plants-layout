@@ -7,12 +7,28 @@
   @extend %font-second;
   font-weight: 700;
   color: $color-second-text;
+  @include media-mobile {
+    @include columns ($width: 100%);
+  }
 }
 
 .prices__header-first {
   font-size: 4.0rem;
   line-height: 4.8rem;
   margin: 40px 0 60px 0;
+  @include media-tablet {
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    margin: 40px 0 55px 0;
+    padding-left: 15px;
+  }
+  @include media-mobile {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 3.0rem;
+    margin: 25px 0 37px 0;
+    padding-left: 0;
+  }
 }
 
 .prices__variants {
@@ -20,7 +36,11 @@
   border: 1px solid $color-border;
   border-radius: 20px;
   padding: 34px 41px;
-
+  @include media-mobile {
+    width: 224px;
+    margin: 0 auto;
+    padding: 27px 22px;
+  }
 }
 
 .variant {
@@ -37,6 +57,15 @@
   &:hover {
     background-color: $color-accordeon;
     @extend %transition;
+  }
+  @include media-mobile {
+    font-size: 1.5rem;
+    line-height: 2.0rem;
+    padding: 15px 40px 15px 30px;
+    margin-bottom: 14px;
+      &:last-child {
+        margin-bottom: 0;
+      }
   }
 }
 
@@ -63,6 +92,18 @@
   span{
     color: $color-brand-first;
   }
+  @include media-tablet {
+    width: 296px;
+    margin: 140px 0 27px 0;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  @include media-mobile {
+    width: 230px;
+    margin: 20px auto 20px auto;
+    font-size: 2.0rem;
+    text-align: center;
+  }
 }
 
 .prices__button {
@@ -81,9 +122,21 @@
     color: $color-light;
     @extend %transition;
   }
+  @include media-mobile {
+    font-size: 1.5rem;
+    line-height: 2.0rem;
+    padding: 6px 24px;
+    margin: 0 auto 40px auto;
+  }
 }
 
 .prices__image {
   margin: 35px 0 114px 10px;
+  @include media-tablet {
+    margin: 30px 0 87px 10px;
+  }
+  @include media-mobile {
+    display: none;
+  }
 }
 

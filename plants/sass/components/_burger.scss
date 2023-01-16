@@ -1,0 +1,19 @@
+.burger {
+  display: none;
+  @include media-mobile {
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+}
+
+.burger__icon {
+  box-sizing: content-box;
+  width: 40px;
+  height: 26px;
+  background: url(../assets/svg/burger.svg) left no-repeat;
+  &:hover {
+      background: url(../assets/svg/burger_hovered.svg) left no-repeat;
+      @extend %transition;
+    }
+}
