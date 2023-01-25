@@ -101,3 +101,36 @@ console.log("Plants2 \n1.Вёрстка соответствует макету 
   };
 
 }());
+
+// prices accordeon
+
+(function () {
+
+  const dropButton = Array.from(document.querySelectorAll('.variant__drop-btn'));
+  let variantArray = Array.from(document.querySelectorAll('.variant_active'));
+  
+  dropButton.forEach(item => item.addEventListener('click', function AddActiveAccordeon() {
+    
+    console.log(variantArray.length);
+   
+    item.classList.toggle('variant__drop-btn-active');
+    item.parentElement.parentElement.classList.toggle('variant_active');
+    item.parentElement.nextElementSibling.classList.toggle('variant__container_active');
+    variantArray = Array.from(document.querySelectorAll('.variant_active'));
+    console.log(variantArray);
+
+    if (variantArray.length > 1) {
+      variantArray.forEach(elem => {
+        elem.classList.remove('variant_active');
+        elem.lastElementChild.classList.remove('variant__container_active');
+        elem.firstElementChild.lastElementChild.classList.remove('variant__drop-btn-active');
+      })
+      item.classList.toggle('variant__drop-btn-active');
+      item.parentElement.parentElement.classList.toggle('variant_active');
+      item.parentElement.nextElementSibling.classList.toggle('variant__container_active');
+      //return variantArray;
+    }
+
+  }))
+
+}());

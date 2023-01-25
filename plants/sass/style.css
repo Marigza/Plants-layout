@@ -7,7 +7,7 @@
   font-weight: 400;
 }
 
-.footer__wrapper, .legend_text, .prices__wrapper, .gallery__caption, .about__text, .welcome__content {
+.footer__wrapper, .legend_text, .variant__container_price, .variant__container_text, .prices__wrapper, .gallery__caption, .about__text, .welcome__content {
   font-family: "Inter", Verdana, sans-serif;
   font-weight: 400;
 }
@@ -1180,18 +1180,12 @@ html {
 }
 
 .variant {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   font-size: 2rem;
   line-height: 2rem;
   padding: 15px 40px;
   background-color: #EDF2EC;
   border-radius: 20px;
   margin-bottom: 32px;
-}
-.variant > * {
-  flex-basis: 15%;
 }
 .variant:last-child {
   margin-bottom: 0;
@@ -1211,6 +1205,27 @@ html {
   }
 }
 
+.variant_active {
+  background-color: #D6E7D2;
+}
+
+.variant__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.variant__header > * {
+  flex-basis: 15%;
+}
+
+.variant__container {
+  display: none;
+}
+
+.variant__container_active {
+  display: block;
+}
+
 .variant__text {
   flex-grow: 1;
 }
@@ -1218,6 +1233,53 @@ html {
 .variant__drop-btn {
   background: url(../assets/svg/accordion_btn.svg) right no-repeat;
   cursor: pointer;
+}
+
+.variant__drop-btn-active {
+  background: url(../assets/svg/accordion_btn_light.svg) left no-repeat;
+  transform: rotate(180deg);
+}
+
+.variant__container_text {
+  color: #717171;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-align: left vertical;
+  border-top: 1px solid #AEA1A1;
+  margin-top: 10px;
+  padding: 6px 0;
+}
+
+.variant__container_price {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.price__symbol {
+  font-weight: 700;
+  color: #E06733;
+}
+
+.price_colored {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #E06733;
+}
+
+.variant__container_button {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  text-decoration: none;
+  color: #717171;
+  padding: 3px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  outline: none;
 }
 
 .prices__contact-us {

@@ -44,7 +44,6 @@
 }
 
 .variant {
-  @include columns($width: 15%);
   font-size: 2.0rem;
   line-height: 2.0rem;
   padding: 15px 40px;
@@ -69,6 +68,22 @@
   }
 }
 
+.variant_active {
+  background-color: $color-accordeon;
+}
+
+.variant__header {
+  @include columns($width: 15%);
+}
+
+.variant__container {
+  display: none;
+}
+
+.variant__container_active {
+  display: block;
+}
+
 .variant__text {
   flex-grow: 1;
 }
@@ -76,6 +91,54 @@
 .variant__drop-btn {
   background: url(../assets/svg/accordion_btn.svg) right no-repeat;
   cursor: pointer;
+}
+
+.variant__drop-btn-active {
+  background: url(../assets/svg/accordion_btn_light.svg) left no-repeat;
+  transform: rotate(180deg);
+}
+
+.variant__container_text{
+  @extend %font-second;
+  color: $color-text-caption;
+  font-size: 1.0rem; 
+  line-height: 1.0rem; 
+  text-align: left vertical; 
+  border-top: 1px solid #AEA1A1;
+  margin-top: 10px;
+  padding: 6px 0;
+}
+.variant__container_price {
+  @extend %font-second;
+  font-size: 1.2rem;
+  line-height: 2.0rem;
+  color: $color-second-text;
+  margin-bottom: 12px;
+}
+
+.price__symbol {
+  font-weight: 700;
+  color: $color-brand-second;
+}
+
+.price_colored {
+  font-weight: 700;
+  font-size: 1.6rem;  
+  color: $color-brand-second;
+}
+
+.variant__container_button {
+  display: inline-block;
+  font-weight: 700; 
+  font-size: 1.4rem; 
+  line-height: 2.0rem;
+  text-decoration: none;
+  color: $color-text-caption;
+  padding: 3px 20px;
+  background-color: $color-light;
+  border-radius: 10px;
+  border: none;
+  outline: none;
 }
 
 .prices__contact-us {
