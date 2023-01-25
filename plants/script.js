@@ -28,5 +28,76 @@ console.log("Plants2 \n1.Вёрстка соответствует макету 
 
   navLinks.forEach(item => item.addEventListener('click', removeModal));
 
-}())
+}());
 
+//change-focus (to blur)
+
+(function () {
+  
+  const tags = Array.from(document.querySelectorAll('.tag'))
+  const tagGarden = document.querySelector('.tag.garden');
+  const tagLawn = document.querySelector('.tag.lawn');
+  const tagPlanting = document.querySelector('.tag.planting');
+
+  const imagesGarden = Array.from(document.querySelectorAll('.gallery__item.garden'));
+  const imagesLawn = Array.from(document.querySelectorAll('.gallery__item.lawn'));
+  const imagesPlanting = Array.from(document.querySelectorAll('.gallery__item.planting'));
+  const images = [imagesGarden, imagesLawn, imagesPlanting].flat();
+
+  tagGarden.addEventListener('click', () => {           
+    tagGarden.classList.toggle('tag_active');
+    checkArrayLength();
+  });
+  tagLawn.addEventListener('click', () => {                  
+    tagLawn.classList.toggle('tag_active');
+    checkArrayLength();
+  });
+  tagPlanting.addEventListener('click', () => {                
+    tagPlanting.classList.toggle('tag_active');
+    checkArrayLength();
+  });
+
+  function checkArrayLength() {
+
+    let arrayActive = [];
+
+    function showArrayActive() {
+      for (i = 0; i < tags.length; i++) {
+        if (tags[i].classList.contains('tag_active')) {
+          arrayActive.push(tags[i]);
+        }
+      }
+      return (arrayActive)
+    };
+    showArrayActive();
+
+    function showActiveImages() {
+      if (arrayActive.length === 0) {
+        images.forEach(item => item.classList.remove('item_blured'));
+      }
+      if (arrayActive.length === 1) {
+        images.forEach(item => item.classList.add('item_blured'));
+        let isGarden = arrayActive.includes(tagGarden) ? imagesGarden : false;
+        let islawn = arrayActive.includes(tagLawn) ? imagesLawn : false;
+        let isPlanting = arrayActive.includes(tagPlanting) ? imagesPlanting : false;
+        let activeImages = isGarden || islawn || isPlanting;
+        activeImages.forEach(item => item.classList.remove('item_blured'));
+      }
+      if (arrayActive.length < tags.length && arrayActive.length > 1) {
+        images.forEach(item => item.classList.remove('item_blured'));
+        let isGarden = arrayActive.includes(tagGarden) ? false : imagesGarden;
+        let islawn = arrayActive.includes(tagLawn) ? false : imagesLawn;
+        let isPlanting = arrayActive.includes(tagPlanting) ? false : imagesPlanting;
+        let nonActiveImages = isGarden || islawn || isPlanting;
+        nonActiveImages.forEach(item => item.classList.add('item_blured'));
+      };
+      if (arrayActive.length === tags.length) {
+        tags.forEach(tag => tag.classList.remove('tag_active'));
+        images.forEach(item => item.classList.remove('item_blured'));
+      };
+      return images;
+    };
+    showActiveImages();
+  };
+
+}());

@@ -1,4 +1,4 @@
-.link_pinterest:hover, .link_twitter:hover, .link_facebook:hover, .link_instagram:hover, .location__selection:active, .prices__button:hover, .variant:hover, .tag:hover, .welcome__button:hover, .burger__icon:hover, .link:hover {
+.link_pinterest:hover, .link_twitter:hover, .link_facebook:hover, .link_instagram:hover, .location__selection:active, .prices__button:hover, .variant:hover, .item_blured, .tag_active, .tag, .welcome__button:hover, .burger__icon:hover, .link:hover {
   transition: all 0.5s ease-out;
 }
 
@@ -1010,16 +1010,17 @@ html {
   border-radius: 5px;
   padding: 11px;
 }
-.tag:hover {
-  background-color: #E06733;
-  color: #ffffff;
-}
 @media (max-width: 670px) {
   .tag {
     padding: 7px;
     font-size: 1.5rem;
     line-height: 2rem;
   }
+}
+
+.tag_active {
+  background-color: #E06733;
+  color: #ffffff;
 }
 
 .service__gallery {
@@ -1110,6 +1111,10 @@ html {
     padding: 0 38px;
     text-align: center;
   }
+}
+
+.item_blured {
+  filter: blur(2px);
 }
 
 .prices {
