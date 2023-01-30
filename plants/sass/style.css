@@ -1,4 +1,4 @@
-.link_pinterest:hover, .link_twitter:hover, .link_facebook:hover, .link_instagram:hover, .location__selection:active, .prices__button:hover, .variant:hover, .item_blured, .tag_active, .tag, .welcome__button:hover, .burger__icon:hover, .link:hover {
+.link_pinterest:hover, .link_twitter:hover, .link_facebook:hover, .link_instagram:hover, .location__selection:active, .prices__button:hover, .variant__container_active, .variant_active, .variant:hover, .item_blured, .tag_active, .tag, .welcome__button:hover, .burger__icon:hover, .link:hover {
   transition: all 0.5s ease-out;
 }
 
@@ -106,6 +106,7 @@ html {
  */
 body {
   margin: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* HTML5 display definitions
@@ -1213,6 +1214,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  cursor: pointer;
 }
 .variant__header > * {
   flex-basis: 15%;
@@ -1232,7 +1234,6 @@ html {
 
 .variant__drop-btn {
   background: url(../assets/svg/accordion_btn.svg) right no-repeat;
-  cursor: pointer;
 }
 
 .variant__drop-btn-active {
@@ -1279,7 +1280,7 @@ html {
   background-color: #ffffff;
   border-radius: 10px;
   border: none;
-  outline: none;
+  cursor: pointer;
 }
 
 .prices__contact-us {

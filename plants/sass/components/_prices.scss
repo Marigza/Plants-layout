@@ -70,10 +70,12 @@
 
 .variant_active {
   background-color: $color-accordeon;
+  @extend %transition;
 }
 
 .variant__header {
   @include columns($width: 15%);
+  cursor: pointer;
 }
 
 .variant__container {
@@ -82,6 +84,7 @@
 
 .variant__container_active {
   display: block;
+  @extend %transition;
 }
 
 .variant__text {
@@ -90,7 +93,6 @@
 
 .variant__drop-btn {
   background: url(../assets/svg/accordion_btn.svg) right no-repeat;
-  cursor: pointer;
 }
 
 .variant__drop-btn-active {
@@ -108,6 +110,7 @@
   margin-top: 10px;
   padding: 6px 0;
 }
+
 .variant__container_price {
   @extend %font-second;
   font-size: 1.2rem;
@@ -138,7 +141,7 @@
   background-color: $color-light;
   border-radius: 10px;
   border: none;
-  outline: none;
+  cursor: pointer;
 }
 
 .prices__contact-us {
