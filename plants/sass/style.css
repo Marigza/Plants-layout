@@ -1114,7 +1114,7 @@ html {
 }
 
 .item_blured {
-  filter: blur(2px);
+  filter: blur(4px);
 }
 
 .prices {
