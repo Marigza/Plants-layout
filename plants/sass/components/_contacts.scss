@@ -36,6 +36,12 @@
   }
 }
 
+.image-woman_no-visible {
+  @include media-mobile {
+    display: none;
+  }
+}
+
 .contacts__header {
   @extend %font-first;
   font-weight: 700;
@@ -66,6 +72,17 @@
   }
 }
 
+.contacts__locations_no-pudding {
+  @include media-tablet {
+    padding-top: 60px;
+    padding-bottom: 14px;
+  }
+  @include media-mobile {
+    width: 100%;
+    padding: 43px 15px 32px 15px;
+  }
+}
+
 .location__selection {
   padding: 5px 33px 5px 20px;
   display: flex;
@@ -84,11 +101,16 @@
   }
 }
 
+.location__selection_active {
+  background-color: $color-bg-active;
+  box-shadow: none;
+}
+
 .legend_text {
   @extend %font-second;
   font-size: 2.0rem;
   line-height: 4.0rem;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.05rem;
   color: $color-text-caption;
 }
 
@@ -96,4 +118,104 @@
   background: url(../assets/svg/accordion_btn_light.svg) center no-repeat;
   width: 16px;
   height: 16px;
+}
+
+.location__variant {
+  display: none;
+}
+
+.location__variant_active {
+  display: block;
+  background-color: $color-select-city;
+  padding: 20px 50px 31px 20px;
+}
+
+.location__item {
+  display: block;
+  @extend %font-second;
+  font-size: 1.6rem;
+  line-height: 2.0rem;
+  letter-spacing: 0.05rem;
+  color: $color-brand-first;
+  padding: 20px 0 5px 5px;
+  border-bottom: 1px solid $color-bg-darken;
+  &:hover,
+  &:active {
+    color: $color-text-caption;
+    border-bottom: 1px solid $color-text-caption;
+  }
+}
+
+.location__adress {
+  display: none;
+}
+
+.location__adress_active {
+  display: flex;
+  flex-direction: column;
+  @extend %font-second;
+  font-size: 1.6rem;
+  line-height: 4.0rem;
+  letter-spacing: 0.05rem;
+  color: $color-second-text;
+  border: 1px solid $color-second-text;
+  border-radius: 20px;
+  background-color: transparent;
+  margin-top: 63px;
+  padding: 17px 32px 32px 32px;
+  @include media-mobile {
+    margin: 47px 10px 0 10px;
+    padding-bottom: 22px;
+  }
+}
+
+.adress__block {
+  display: flex;
+  gap: 10px;
+}
+
+.adress__office {
+  padding-top: 10px;
+  line-height: 2.0rem;
+}
+
+.adress__fact {
+  color: $color-text-caption;
+}
+
+.adress__city-name {
+  white-space: nowrap;
+}
+
+.adress__phone-number {
+  white-space: nowrap;
+}
+
+.adress__office-number {
+  padding-top: 10px;
+  line-height: 2.0rem;
+}
+
+.adress__call-us {
+  align-self: center;
+  display: inline-block;
+  @extend %font-first;
+  font-weight: 700;
+  font-size: 1.0rem;
+  line-height: 1.3rem;
+  color: $color-text-caption;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid $color-brand-second;
+  border-radius: 5px;
+  padding: 7px 0;
+  width: 122px;
+  text-align: center;
+  margin-top: 15px;
+  &:hover,
+  &:active {
+    color: $color-light;
+    background-color: $color-brand-second;
+    @extend %transition;
+  }
 }

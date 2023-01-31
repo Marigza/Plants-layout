@@ -72,16 +72,23 @@
   border: 1px solid $color-brand-second;
   border-radius: 5px;
   padding: 11px;
-  &:hover {
-    background-color: $color-brand-second;
-    color: $color-light;
-    @extend %transition;
-  }
+  @extend %transition;
+  // &:hover {
+  //   background-color: $color-brand-second;
+  //   color: $color-light;
+  //   @extend %transition;
+  // }
   @include media-mobile {
     padding: 7px;
     font-size: 1.5rem;
     line-height: 2.0rem;
   }
+}
+
+.tag_active {
+  background-color: $color-brand-second;
+  color: $color-light;
+  @extend %transition;
 }
 
 .service__gallery {
@@ -146,4 +153,9 @@
     padding: 0 38px;
     text-align: center;
   }
+}
+
+.item_blured {
+  filter: blur(4px);
+  @extend %transition;
 }
